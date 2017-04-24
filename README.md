@@ -16,11 +16,31 @@ The project is licensed under under __BSD__ and __LGPL__. See the source code fo
 
 Building the plugin
 ===================
-Run:
+
+This plugin expresses two dependencies on dcache modules.  In order
+to build locally, the procedure must currently be to clone locally
+the main dcache-server repository, install the .jars in the local
+maven repository, then switch back to this plugin repository and run the
+build.  
+
+Assuming maven and git are installed locally, the steps would then be:
+
+
+1.  In an appropriate local directory, checkout dCache from GitHub (here we use https, read-only):
+
+    git clone https://github.com/dCache/dcache.git
+    
+2.  cd to the dcache directory created by the clone, and do:
+
+    mvn install -DskipTests
+    
+3.  switch to your checked out dcache-snow repository, and run:
 
     mvn clean package
 
 This should produce a .zip file for the plugin.
+
+A pre-built .zip is included in this repository in the lib directory.
 
 Installing the plugin
 =====================
