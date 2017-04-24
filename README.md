@@ -18,7 +18,7 @@ Building the plugin
 ===================
 Run:
 
-    mvn clean package -am -pl plugins/snow
+    mvn clean package
 
 This should produce a .zip file for the plugin.
 
