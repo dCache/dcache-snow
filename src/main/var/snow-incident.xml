@@ -1,0 +1,24 @@
+<SnowIncident>
+  <!-- JSON encoding to use -->
+  <encoding>utf-8</encoding>
+  <!--Incident Table Label: Assignment group -->
+  <assignment_group>Storage Service</assignment_group>
+  <!--Incident Table Label: Category -->
+  <u_categorization>Scientific Data Storage and Access</u_categorization>
+  <!--Incident Table Label: Caller -->
+  <caller_id>cd-srv-dms-enstore</caller_id>
+  <!--Incident Table Label: Incident state -->
+  <incident_state>New</incident_state>
+  <!--Incident Table Label: Opened by -->
+  <opened_by>cd-srv-dms-enstore</opened_by>
+  <!--Incident Table Label: Reported Source -->
+  <u_reported_source>Event Monitoring</u_reported_source>
+  <!--Incident Table Label: Service type -->
+  <u_service_type>Storage</u_service_type>
+  <!-- Service Now endpoint (https) -->
+  <host>fermidev.service-now.com</host>
+  <!-- Account user name -->
+  <user>cd-srv-dms-enstore</user>
+  <!-- Account password (Must be encrypted using plugin PasswordManager) -->
+  <password></password>
+</SnowIncident>
