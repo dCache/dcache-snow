@@ -44,11 +44,10 @@ Assuming maven and git are installed locally, the steps would then be:
     the version above, for instance):
 
     mvn checkout 3.0
+
     mvn clean package
 
 This should produce a .zip file for the plugin.
-
-A pre-built .zip is included in this repository in the lib directory.
 
 Installing the plugin
 =====================
