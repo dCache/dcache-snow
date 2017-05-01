@@ -30,12 +30,20 @@ Assuming maven and git are installed locally, the steps would then be:
 
     git clone https://github.com/dCache/dcache.git
     
-2.  cd to the dcache directory created by the clone, and do:
+2.  cd to the dcache directory created by the clone, and checkout 
+    the version/branch (master, 3.1, 3.0, etc.) corresponding to the
+    desired version of this plugin; e.g.,
+    
+    mvn checkout -b 3.0 origin/3.0
+    
+    then do:
 
     mvn install -DskipTests
     
-3.  switch to your checked out dcache-snow repository, and run:
+3.  switch to your checked out dcache-snow repository, and do (continuing with
+    the version above, for instance):
 
+    mvn checkout 3.0
     mvn clean package
 
 This should produce a .zip file for the plugin.
